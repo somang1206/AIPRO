@@ -11,7 +11,242 @@ h3{
   color: #fff;
 }
 
+@media (min-width:1521px) {
+  .container {
+    max-width: 1521px;
+  }
+}
+
 
 
 
 /*헤더*/
+
+
+/* Contact */
+#contact{
+  width: 100%;
+  height: auto;
+  background: url(../img/contact_bg.png) no-repeat center 0;
+  background-size: cover;
+  box-shadow: 0px 15px 13px rgba(0, 0, 0, 0.25);
+}
+
+#contact .contact_wrap{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#contact .contact_wrap::after{
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: url(../img/contact_line.png) no-repeat;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+  transition: translate(-10%, -50%);
+}
+
+#contact .contact_wrap .ct_left{
+  width: 50%;
+  padding: 123px 0;
+}
+
+#contact .contact_wrap .ct_left .ct_logo{
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+#contact .contact_wrap .ct_left .ct_logo img{
+  max-width: 100%;
+}
+
+#contact .contact_wrap .ct_left ul{
+  width: 100%;
+}
+
+#contact .contact_wrap .ct_left ul li{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 12px;
+}
+
+#contact .contact_wrap .ct_left ul li:nth-child(1){
+  /* padding-top: 43px; */
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#contact .contact_wrap .ct_left ul li:nth-child(2){
+  padding-top: 16px;
+}
+
+#contact .contact_wrap .ct_left .sns{
+  width: 100%;
+  padding-top: 21px;
+}
+
+#contact .contact_wrap .ct_left .sns p{
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#contact .contact_wrap .ct_left .sns img{
+  max-width: 100%;
+}
+
+#contact .contact_wrap .ct_right{
+  width: 50%;
+}
+
+#contact .contact_wrap .ct_right h3{
+  /* border: 10px solid red; */
+  width: 80%;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 26px;
+}
+
+#contact .contact_wrap .ct_right .gform{
+  display: block;
+  margin: 0 auto;
+}
+
+#contact .contact_wrap .ct_right .gform .email{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  background: rgba(62, 62, 62, 0.5);
+  border-radius: 10px;
+  padding: 1%;
+  margin-bottom: 22px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#contact .contact_wrap .ct_right .gform textarea{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(62, 62, 62, 0.5);
+  border-radius: 10px;
+  padding: 1%;
+  margin-bottom: 36px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#message{
+  height: 230px;
+}
+
+#contact .contact_wrap .ct_right .gform .send{
+  display: block;
+  margin: 0 auto;
+  width: 33%;
+  height: 57px;
+  border-radius: 96px;
+  background: linear-gradient(rgba(29,214,220,1),rgba(14, 147, 157, 1));
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  border: none;
+}
+/* //#contact */
+
+
+/* footer */
+footer{
+  width: 100%;
+  height: auto;
+  background: #000024;
+  padding: 10% 0;
+}
+
+footer .footer_area{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+footer .footer_area .f_top{
+  width: 100%;
+  padding: 3% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+footer .footer_area .f_top h1{
+ width: 20%;
+}
+
+footer .footer_area .f_top h1 img{
+  max-width: 100%;
+}
+
+footer .footer_area .f_top .white_pp{
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .footer_area .white_pp h5{
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+footer .footer_area .f_top .white_pp button{
+  width: 20%;
+  margin-left: 26PX;
+  background: none;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+footer .footer_area .f_top .white_pp button a{
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  padding: 1%;
+}
+
+footer .footer_area .f_top .white_pp button img{
+  padding-left: 6px;
+}
+
+footer .footer_area p{
+  width: 100%;
+  color: gray;
+  font-size: 0.5rem;
+  text-align: center;
+}
