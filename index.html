@@ -5,11 +5,14 @@
     <title></title>
 
     <!--meta-->
-      <meta name="viewport" content="width=device-width,initial-scal=1">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="X-UA-Compatible" content="le=edge">
 
     <!--js-->
       <script src ="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      
 	  
 	 <!--bootstrap-->
       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +22,12 @@
 	  <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="css/index.css">
       <link rel="stylesheet" href="css/moblie.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--favicon--->
       <link href="img/favicon.ico" rel="icon">
       <link href="img/favicon.ico" rel="apple-touch-icon">
+
 
 
   </head>
@@ -34,23 +39,26 @@
 
     <header>
 
-      <div class="">
+      <div class="hd_all container">
 
         <hgroup>
 
-          <h1><img src="img/.png" alt="logo"></h1>
+          <h1><a href="./index.html"><img src="img/AIPro_logo.png" alt="logo"></a></h1>
 
         </hgroup>
 
 
-        <nav class="">
+        <nav class="pc_menu">
           <ul>
 
-            <li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
+            <li><a href="Home" class="scroll btn-1">Home</a></li>
+            <li><a href="About_AIPRO" class="scroll btn-1">About</a></li>
+            <li><a href="Service" class="scroll btn-1">Service</a></li>
+            <li><a href="Roadmap" class="scroll btn-1">Roadmap</a></li>
+            <li><a href="Contact" class="scroll btn-1">Contact</a></li>
+            <li class="eng_page"><a href="./index_eng.html">Eng 
+              <span><img src="img/whitepaper_eng.png" alt="eng"></span>
+            </a></li>
 
           </ul>
         </nav>
@@ -58,42 +66,79 @@
 
         <!--반응형-->
 
-        <div class="">
+        <div class="m_menu">
 
-          <img src="img/.png" alt="menu_button">
+          <!-- <img src="img/.png" alt="menu_button"> -->
+          <a href="" class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
 
         </div>
 
-        <nav class="">
+        <nav class="m_menu_wrap">
 
           <ul>
 
-            <<li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
-            <li><a href="" class="scroll"></a></li>
-
+              <li><a href="Home" class="scroll btn">Home</a></li>
+            <li><a href="About_AIPRO" class="scroll btn">About</a></li>
+            <li><a href="Service" class="scroll btn">Service</a></li>
+            <li><a href="Roadmap" class="scroll btn">Roadmap</a></li>
+            <li><a href="Contact" class="scroll btn">Contact</a></li>
+            <li class="eng_page"><a href="./index_eng.html">Eng 
+              <span><img src="img/whitepaper_eng.png" alt="eng"></span>
+            </a></li>
           </ul>
 
         </nav>
 
-                  <!--반응형 js-->
-                <script type="text/javascript">
-                      $(function() {
-                $("").click(function() {
-                  $("").animate({width:"toggle"},250);
-                });
-                });
-
-                </script>
-
       </div>
+
+      <script type="text/javascript">
+        $(function () {
+          $(".menu-trigger").click(function () {
+            $(".m_menu_wrap").animate({ width: "toggle" }, 250);
+          });
+        });
+
+      </script>
 
     </header>
 
 
 
+    <div id="Home">
+
+      <div class="main_vid">
+        <video autoplay="" muted="" loop="" playsinline="">
+          <source src="video/main_vid.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="home_wrap">
+        <div class="home_contents container">
+          <p class="main_title">AIPRO</p>
+
+          <b>Artificial Intelligence Reservation Process</b>
+
+          <p>새로운 여행의 트렌드를 제시합니다.</p>
+
+          <div class="links">
+              <a href="./AIPRO Whitepaper_kor.pdf" class="btn-hover color-10">Whitepaper</a>
+
+
+              <a href="" class="btn-hover color-10">Wallet</a>
+          </div>
+        </div>
+      </div><!-- home_wrap -->
+
+
+    </div>
+
+
+
+    <script src="js/menu_scroll.js"></script>
 
   </body>
 
