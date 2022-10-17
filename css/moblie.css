@@ -1,18 +1,62 @@
 
 /*데탑*/
 @media screen and (max-width:1440px) {
+  #coin::before {
+    right: -60%;
+  }
+  #coin .coin_area .chart_area {
+    width: 90%;
+  }
+  #coin .coin_area .chart_area .graph_area {
+    margin: 0 auto;
+  }
 }
 
 
 
 /*노트북*/
   @media screen and (max-width:1024px) {
+    #coin::before {
+      right: -90%;
+    }
 }
 
 
 
   /*아이패드 (768px)*/
   @media screen and (max-width:991px) {
+    #coin::before {
+      top: 15%;
+    }
+    #coin .coin_area .chart_area .graph_area {
+      flex-wrap: wrap;
+    }
+    #coin .coin_area .chart_area .graph_area .chart_graph {
+      width: 70%;
+      margin: 0 auto;
+    }
+    #coin .coin_area .chart_area .graph_area .graph:first-child {
+      order: 2;
+      margin-top: 5%;
+    }
+    #coin .coin_area .chart_area .graph_area .graph:nth-child(2) {
+      order: 1;
+    }
+    #coin .coin_area .chart_area .graph_area .graph:last-child {
+      order: 3;
+      margin-top: 5%;
+    }
+
+    #roadmap .roadmap_wrap .roadmap_box {
+      display: block;
+    }
+    #roadmap .roadmap_wrap .roadmap_box .rdm_box {
+      width: 70%;
+      margin: 0 auto;
+    }
+    #roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card {
+      margin-bottom: 10%;
+    }
 }
 
 
@@ -20,7 +64,13 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  #coin .coin_area .chart_area {
+    width: 100%;
+  }
 
+  #roadmap .roadmap_wrap .roadmap_box .rdm_box {
+    width: 80%;
+  }
 }
 
 
@@ -28,7 +78,30 @@
 
 
 @media screen and (max-width:576px) {
+  #coin::before {
+    right: -200%;
+  }
+  #coin .coin_area .coin_txt p {
+    margin: 10% 0 3%;
+  }
+  #coin .coin_area .chart_area .chart_txt {
+    display: block;
+    text-align: center;
+  }
+  #coin .coin_area .chart_area .graph_area .chart_data {
+    width: 100%;
+  }
+  #coin .coin_area .chart_area .graph_area .chart_data ul {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #coin .coin_area .chart_area .graph_area .graph:last-child {
+    margin-top: 0;
+  }
 
+  #roadmap .roadmap_wrap .roadmap_box {
+    margin-top: 10%;
+  }
 }
 
 
@@ -36,12 +109,17 @@
 /*모바일3 갤럭시*/
 
   @media screen and (max-width:425px) {
-
+    #coin::before {
+      right: -250%;
+    }
 }
 
 
 
 /*모바일4 아이폰*/
     @media screen and (max-width:375px) {
-
+      #coin .coin_area .chart_area .graph_area .chart_data ul {
+        width: 80%;
+        margin: 0 auto;
+      }
 }

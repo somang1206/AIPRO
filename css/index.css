@@ -11,7 +11,207 @@ h3{
   color: #fff;
 }
 
-
+@media (min-width:1521px) {
+  .container {
+    max-width: 1521px;
+  }
+}
 
 
 /*헤더*/
+
+/* coin */
+
+#coin {
+  width: 100%;
+  padding: 100px 0;
+  background: #0A0337 url("../img/intro_airplane.png")no-repeat;
+  background-size: contain;
+  background-position: 15% 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#coin::before {
+  content: "";
+  width: 2000px;
+  height: 100%;
+  position: absolute;
+  right: -40%;
+  top: 0;
+  background: url("../img/intro_moon.png")no-repeat;
+  background-size: cover;
+}
+
+#coin .coin_area {
+  width: 100%;
+}
+
+#coin .coin_area .coin_txt {
+  text-align: center;
+}
+
+#coin .coin_area .coin_txt h3 {
+  position: relative;
+}
+
+#coin .coin_area .coin_txt h3::before {
+  content: "";
+  width: 120px;
+  height: 10px;
+  background: #DB2473;
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  transform: translateX(-50%);
+}
+
+#coin .coin_area .coin_txt p {
+  color: #fff;
+  margin: 5% 0 3%;
+}
+
+#coin .coin_area .chart_area {
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(12.5px);
+  border-radius: 20px;
+  padding-bottom: 5%;
+  /* border: 2px solid #fff;
+  border-image: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  border-image-slice: 2; */
+}
+
+#coin .coin_area .chart_area .chart_txt {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  color: #fff;
+}
+
+#coin .coin_area .chart_area .graph_area {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5%;
+}
+
+#coin .coin_area .chart_area .graph_area .chart_data {
+  color: #fff;
+}
+
+#coin .coin_area .chart_area .graph_area .chart_data ul li {
+  line-height: 4;
+  display: flex;
+  align-items: center;
+}
+
+#coin .coin_area .chart_area .graph_area .data_1 ul li span, 
+#coin .coin_area .chart_area .graph_area .data_2 ul li span {
+  width: 30px;
+  height: 30px;
+  background-color: #2287A6;
+  display: block;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+#coin .coin_area .chart_area .graph_area .data_1 ul li:nth-child(2) span {
+  background-color: #36AEC6;
+}
+
+#coin .coin_area .chart_area .graph_area .data_1 ul li:nth-child(3) span {
+  background-color: #59C2D6;
+}
+
+#coin .coin_area .chart_area .graph_area .data_1 ul li:last-child span {
+  background-color: #E492BB;
+}
+
+#coin .coin_area .chart_area .graph_area .data_2 ul li:first-child span {
+  background-color: #CB618F;
+}
+
+#coin .coin_area .chart_area .graph_area .data_2 ul li:nth-child(2) span {
+  background-color: #DB2473;
+}
+
+#coin .coin_area .chart_area .graph_area .data_2 ul li:nth-child(3) span {
+  background-color: #086D90;
+}
+
+#coin .coin_area .chart_area .graph_area .data_2 ul li:last-child i {
+  margin-right: 20px;
+  color: #A7A6A8;
+}
+
+#coin .coin_area .chart_area .graph_area .chart_graph {
+  width: 33%;
+}
+#coin .coin_area .chart_area .graph_area .chart_graph img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* roadmap */
+
+#roadmap {
+  width: 100%;
+  padding: 100px 0;
+  background: #0A0337 url("../img/service_airplane_2.png")no-repeat left top;
+  background-size: contain;
+}
+
+
+#roadmap .roadmap_wrap {
+  width: 100%;
+}
+
+#roadmap .roadmap_wrap h3 {
+  text-align: center;
+  position: relative;
+}
+
+#roadmap .roadmap_wrap h3::before {
+  content: "";
+  width: 120px;
+  height: 10px;
+  background: #1C7999;
+  position: absolute;
+  left: 50%;
+  bottom: -50%;
+  transform: translateX(-50%);
+}
+
+#roadmap .roadmap_wrap .roadmap_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+}
+
+#roadmap .roadmap_wrap .roadmap_box .rdm_box {
+  width: 30%;
+  background: rgba(40, 40, 76, 0.7);
+  box-shadow: 0px 25px 75px -33px #56ABC1;
+  border-radius: 20px;
+}
+
+#roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card {
+  width: 100%;
+  height: 100%;
+  padding: 10% 8%;
+}
+
+#roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card h4 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 8%;
+  color: #59C2D6;
+}
+
+#roadmap .roadmap_wrap .roadmap_box .rdm_box .rdm_card p {
+  padding: 4% 0;
+  color: #fff;
+}
