@@ -2,3 +2,71 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+    #about01 .about01_bg::before {
+        top: -100px;
+
+      }
+
+      footer{
+        width: 100%;
+        height: auto;
+        background: #000024;
+        padding: 5% 0 1%;
+      }
+      
+      @keyframes curtain {
+        100%{
+          top: -90px;
+        }
+      }
+
+
+
+
+    @media screen and (max-width:1024px){
+
+
+  .about_txt{
+    position: relative;
+    z-index: 30;
+  }
+    }
+
+
+
+
+    @media screen and (max-width:991px) {
+        .about01_br{
+            display: none;
+        }
+        
+        #about01 .about01_bg::before {
+            top: -60px;
+          }
+
+          @keyframes curtain {
+            100%{
+              top: -50px;
+            }
+          }
+    }
+
+    @media screen and (max-width:767px) {
+        .about_txt p br{
+            display: none;
+        }
+        
+        .about01_br2{
+            display: block !important;
+        }
+    }
+
+
+    @media screen and (max-width:425px){
+        .box_f b{
+            font-size: 1em;
+        }
+    }
+
+
+

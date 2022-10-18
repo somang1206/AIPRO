@@ -30,14 +30,14 @@ var h = 0;
 $(burger).on("click", function () {
 if (h == 0) {
 $('.m_menu').animate({
-right: '0',
+right: '10%',
 opacity: 1
 }, 500);
 $(this).addClass('active-1');
 h++;
 } else if (h == 1) {
 $('.m_menu').animate({
-right: '-20%',
+right: '10%',
 /* opacity: 0 */
 }, 500);
 $(this).removeClass('active-1');
@@ -47,8 +47,8 @@ $(window).scroll(function() {
 sct = $(window).scrollTop();
 if(sct>30){
 $('.m_menu').css({
-opacity: 0,
-right :'-20%'
+opacity: 1,
+right :'10%'
 }, 500);
 $(burger).removeClass('active-1');
 h=0;
