@@ -188,8 +188,8 @@ header{
 }
 
 .menu-trigger.active-1 span:nth-of-type(3) {
-  -webkit-transform: translateY(-20px) rotate(45deg);
-  transform: translateY(-20px) rotate(45deg);
+  -webkit-transform: translateY(-18px) rotate(45deg);
+  transform: translateY(-18px) rotate(45deg);
 }
 
 .m_menu{
