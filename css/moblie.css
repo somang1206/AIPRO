@@ -23,11 +23,13 @@
     #coin::before {
       right: -60%;
     }
-    #coin .coin_area .chart_area {
-      width: 90%;
-    }
+
     #coin .coin_area .chart_area .graph_area {
       margin: 0 auto;
+    }
+
+    footer .footer_area .f_top .white_pp {
+      width: 50%;
     }
 }
 
@@ -144,7 +146,13 @@
       flex-wrap: wrap;
     }
     #coin .coin_area .chart_area .graph_area .chart_graph {
-      width: 70%;
+      width: 75%;
+      margin: 0 auto;
+    }
+
+    #coin .coin_area .chart_area .graph_area .chart_graph img{
+      max-width: 80%;
+      display: block;
       margin: 0 auto;
     }
     #coin .coin_area .chart_area .graph_area .graph:first-child {
@@ -194,12 +202,13 @@
 
     #contact .contact_wrap .ct_right{
       width: 100%;
-      padding-bottom: 100px;
+      padding: 100px 0;
     }
 
 
     #contact .contact_wrap .ct_left{
       border-right: none;
+      border-bottom: 1px solid #fff;
     }
     /* footer */
 
