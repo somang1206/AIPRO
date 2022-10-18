@@ -43,7 +43,8 @@ right: '10%',
 $(this).removeClass('active-1');
 h--;
 }
-$(window).scroll(function() {
+
+/* $(window).scroll(function() {
 sct = $(window).scrollTop();
 if(sct>30){
 $('.m_menu').css({
@@ -53,5 +54,5 @@ right :'10%'
 $(burger).removeClass('active-1');
 h=0;
 }
-});
+}); */
 })
