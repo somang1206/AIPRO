@@ -690,7 +690,7 @@ header{
   background: url(../img/service_airplane_2.png) no-repeat center;
   width: 1000px;
   height: 710px;
-  background-size: cover;
+  background-size: contain;
 }
 
 #roadmap .roadmap_wrap {
